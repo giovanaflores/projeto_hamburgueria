@@ -1,0 +1,654 @@
+@import url('media quieres.css');
+
+/* Reset e Variáveis Globais */
+:root {
+    --amarelo-principal: #ffce83;
+    --cinza-navbar: rgb(41, 40, 40);
+    --amarelo-secundario: #fab144;
+    --branco: #fff;
+    --preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cinza-navbar);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 115px;
+    background-color: var(--preto);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav img {
+    width: 95px;
+    height: 95px;
+    margin: 10px;
+}
+
+.links {
+    display: flex;
+    margin: 40px;
+    position: relative;
+    transition: all 0.4s;
+    font-family: 'Mulish', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.links a {
+    padding: 0 40px;
+    color: var(--amarelo-principal);
+    font-size: 1.3em;
+    position: relative;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover {
+    color: var(--branco);
+}
+
+.links a::after {
+    content: '';
+    height: 2px;
+    width: 60%;
+    background-color: var(--amarelo-principal);
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.links a:hover::after,
+.links a:active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.links a:active {
+    transform: scale(0.97);
+}
+
+.links li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: var(--amarelo-principal);
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    display: flex;
+    margin: 37px;
+}
+
+.redes-sociais a {
+    color: var(--amarelo-principal);
+    padding: 15px;
+    font-size: 23px;
+}
+
+.redes-sociais li,
+.redes-sociais .carrinho-compras li {
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais li:hover,
+.redes-sociais .carrinho-compras li:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociais .carrinho-compras {
+    color: var(--amarelo-principal);
+    padding-left: 7px;
+    font-size: 23px;
+}
+
+/* Landing Page */
+.container {
+    color: var(--branco);
+    padding-top: 100px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.hero-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/imagem_fundo_do_site_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 1;
+}
+
+.inicio {
+    height: 1200px;
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.inicio h1 {
+    font-size: 6em;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+}
+
+.inicio span#oferta-especial {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid;
+    border-color: var(--amarelo-principal);
+    padding: 5px;
+    font-family: 'Mulish', sans-serif;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.inicio p {
+    font-size: 1.4em;
+    text-align: justify;
+    width: 900px;
+    margin: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.inicio span#na-brasa {
+    color: var(--amarelo-secundario);
+    font-family: 'Arizonia', cursive;
+    font-size: 1.5em;
+}
+
+/* Cardápio hamburguers e porcoes*/
+.cardapio {
+    background-color: var(--branco);
+    padding-top: 200px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.cardapio-porcoes {
+    background-color: var(--branco);
+    padding-top: 100px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.cardapio #burguers-menu,
+.cardapio-porcoes #porcoes-menu,
+.cardapio-bebidas #bebidas-menu {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: var(--amarelo-secundario);
+    font-size: 2.5em;
+}
+
+.cardapio h1,
+.cardapio-porcoes h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: 5em;
+    margin-top: 10px;
+}
+
+.hamburguer img,
+.porcao img {
+    height: 300px;
+    width: 310px;
+    object-fit: cover;
+    border-radius: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.544);
+}
+
+.cardapio .imagens-container,
+.cardapio-porcoes .imagens-container {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    padding: 100px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.colunas {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex: 1;
+}
+
+.hamburguer,
+.porcao {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.descricao-burguer,
+.descricao-porcao {
+    padding-top: 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.descricao-burguer h2,
+.descricao-porcao h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5em;
+}
+
+.descricao-burguer #texto-burguer,
+.descricao-porcao #texto-porcao {
+    width: 500px;
+    font-size: 1.4em;
+    text-align: justify;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 20px;
+}
+
+.preco-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: var(--amarelo-secundario);
+    font-family: 'Leckerli One', cursive;
+}
+
+#add-to-cart {
+    color: var(--branco);
+    background-color: var(--preto);
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.362);
+    width: 70px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+#add-to-cart:active {
+    transform: scale(1.1);
+}
+
+/* Cardápio Bebidas */
+.cardapio-bebidas {
+    background-color: #111111;
+    padding: 200px 0 100px;
+    min-height: 100vh;
+}
+
+.cardapio-bebidas h1 {
+    color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: 5em;
+    margin-top: 10px;
+}
+
+.grid-bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.bebida-item {
+    background: linear-gradient(145deg, #191919, #282828);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.bebida-item:hover {
+    transform: translateY(-10px);
+}
+
+.bebida-imagem {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.bebida-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+}
+
+.bebida-item:hover .bebida-imagem img {
+    transform: scale(1.1);
+}
+
+.bebida-conteudo {
+    padding: 20px;
+    color: var(--branco);
+}
+
+.bebida-conteudo h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.tamanho {
+    display: inline-block;
+    background: rgba(250, 177, 68, 0.2);
+    color: var(--amarelo-secundario);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Feedbacks */
+.feedbacks {
+    background-color: var(--branco);
+    padding: 100px 0;
+    text-align: center;
+    height: 700px;
+}
+
+#feedback-titulo {
+    font-family: 'Pacifico', cursive;
+    color: var(--amarelo-secundario);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.feedbacks h1 {
+    color: var(--preto);
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 50px;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feedback-card {
+    background: linear-gradient(145deg, #222, #333);
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.408);
+}
+
+.feedback-card:hover {
+    transform: translateY(-10px);
+}
+
+.cliente-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cliente-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cliente-detalhes h3 {
+    color: var(--branco);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.estrelas {
+    color: var(--amarelo-secundario);
+    font-size: 0.9em;
+}
+
+.comentario {
+    color: var(--branco);
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--preto);
+    height: 500px;
+}
+
+.footer-content {
+    padding: 50px 30px 0 30px;
+}
+
+.footer p,
+.footer span,
+.footer a {
+    font-family: 'Mulish', sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 1.1em;
+}
+
+.footer h2 {
+    font-family: 'Mulish', sans-serif;
+    color: var(--amarelo-secundario);
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-item i {
+    font-size: 2em;
+    color: var(--amarelo-principal);
+}
+
+.footer-item i:hover {
+    color: var(--amarelo-secundario);
+}
+
+.sobre-restaurante #na-brasa {
+    color: var(--amarelo-secundario);
+    font-size: 1.5em;
+    font-family: 'Arizonia', cursive;
+}
+
+.footer-bottom {
+    width: 100%;
+    font-size: 1.1em;
+    background-color: #202020;
+    margin-top: 93px;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    text-align: center;
+}
+
+.footer-content p {
+    width: 600px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.conteudos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.conteudos a {
+    display: flex;
+    flex-direction: column;
+    color: var(--branco);
+    padding-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.conteudos a:hover {
+    color: var(--amarelo-secundario);
+}
+
+.conteudos h2 {
+    padding-bottom: 20px;
+}
+
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro input {
+    width: 300px;
+    height: 55px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+.cadastro input:focus {
+    outline: none;
+    font-size: 1em;
+}
+
+.cadastro button {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--amarelo-principal);
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.cadastro button:hover {
+    background-color: var(--amarelo-secundario);
+}
+
+.cadastro button:active {
+    transform: scaleY(1.1);
+}
+
+.redes-sociais-footer ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.redes-sociais-footer a {
+    color: var(--amarelo-principal);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais-footer a:hover {
+    transform: scale(1.1);
+    color: var(--amarelo-secundario);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-bebidas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feedback-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .feedbacks h1 {
+        font-size: 2.5em;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-bebidas {
+        grid-template-columns: 1fr;
+    }
+}
