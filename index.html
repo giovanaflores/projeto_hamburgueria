@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="https://kit.fontawesome.com/71001a743d.js" crossorigin="anonymous"></script>
+    <title>Na Brasa</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="icons/logo.png" alt="Logo da hamburgueria">
+        </div>
+
+        <ul class="links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Contato</a></li>
+            <li>
+                <a href="#">Cardápio</a>
+            </li>
+        </ul>
+
+        <ul class="redes-sociais">
+            <li><a href="https://www.google.com/maps" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><i class="fa-solid fa-cart-shopping carrinho-compras"></i></li>
+        </ul>
+    </nav>
+
+    <section class="hero-background" id="inicio">
+        <div class="container">
+            <div class="inicio">
+                <span id="oferta-especial">Oferta especial</span>
+                <h1>Os melhores burgers<br>do mundo</h1>
+                <p>
+                    Bem-vindo ao <span id="na-brasa">Na Brasa</span> aqui cada hambúrguer é uma experiência única, feito com ingredientes selecionados e carnes suculentas, grelhadas na perfeição. Nosso ambiente aconchegante e moderno é o lugar ideal para reunir amigos e família, enquanto saboreia combinações irresistíveis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INÍCIO DO CARDÁPIO DE LANCHES -->
+    <main class="cardapio">
+        <section class="burguers">
+            <p id="burguers-menu">Burgers Menu</p>
+            <h1>Best Ever Burgers</h1>
+
+            <div class="imagens-container">
+                <!-- Primeira Coluna -->
+                <div class="colunas">
+                    <div class="hamburguer">
+                        <img src="imagens/big-burger-stuffed-with-chicken-meat-salad-wooden-board.jpg" alt="Frango Crocante">
+                        <div class="descricao-burguer">
+                            <h2>Frango Crocante</h2>
+                            <p id="texto-burguer">Pão da casa, hambúrguer de frango empanado crocante, alface, tomate, picles e rodelas de cebola roxa acompanhado com maionese da casa.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 28,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/big-mac-burger-potatoes-sticks-dark-wooden-board.jpg" alt="Clássico do Chef">
+                        <div class="descricao-burguer">
+                            <h2>Clássico do Chef</h2>
+                            <p id="texto-burguer">Pão da casa, blend de carne bovina, queijo cheddar, picles, tomate e alface, acompanhado com batata frita temperada.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 34,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/front-view-burger-stand.jpg" alt="Trufado Supreme">
+                        <div class="descricao-burguer">
+                            <h2>Trufado Supreme</h2>
+                            <p id="texto-burguer">Pão brioche, carne bovina, cebola crispy, queijo prato, bacon, picles, alface americana e molho picante agridoce.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 42,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/hamburguer-caseiro-saboroso-fresco-na-mesa-de-madeira_147620-1309.avif" alt="Spicy Crisp Chicken">
+                        <div class="descricao-burguer">
+                            <h2>Spicy Crispy Chicken</h2>
+                            <p id="texto-burguer">Pão brioche, frango empanado, picles e pimenta sriracha, fatias de queijo cheddar.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 30,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda Coluna -->
+                <div class="colunas">
+                    <div class="hamburguer">
+                        <img src="imagens/hamburguer_vegano.webp" alt="Verde Poderoso">
+                        <div class="descricao-burguer">
+                            <h2>Verde Poderoso</h2>
+                            <p id="texto-burguer">Pão brioche, hambúrguer de grão de bico, cogumelos, alface, tomate, queijo coalho e molho de ervas.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 37,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/high-angle-burger-with-fries-table.jpg" alt="Montanha de Bacon">
+                        <div class="descricao-burguer">
+                            <h2>Montanha de Bacon</h2>
+                            <p id="texto-burguer">Pão de hambúrguer, fatias grandes de bacon, cebola roxa, rúcula e tomate.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 38,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/still-life-delicious-american-hamburger (2).jpg" alt="Nobre">
+                        <div class="descricao-burguer">
+                            <h2>Nobre</h2>
+                            <p id="texto-burguer">Pão brioche, hambúrguer smash, queijo cheddar e salada coleslaw.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 28,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburguer">
+                        <img src="imagens/still-life-delicious-american-hamburger.jpg" alt="Smash duplo">
+                        <div class="descricao-burguer">
+                            <h2>Smash duplo</h2>
+                            <p id="texto-burguer">Pão brioche, hambúrguer duplo smash, queijo cheddar, bacon e molho especial.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 26,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INÍCIO DO CARDÁPIO DE PORÇÕES -->
+    <main class="cardapio-porcoes">
+        <section class="porcoes">
+            <p id="porcoes-menu">Porções Menu</p>
+            <h1>Porções</h1>
+            <div class="imagens-container">
+                <!-- Primeira coluna -->
+                <div class="colunas">
+                    <div class="porcao">
+                        <img src="imagens/batata-frita.jpg" alt="Batata frita">
+                        <div class="descricao-porcao">
+                            <h2>Batata Frita</h2>
+                            <p id="texto-porcao">Batata frita temperada com sal, páprica doce e pimenta do reino.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 34,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="porcao">
+                        <img src="imagens/frango_frito.jpg" alt="Frango frito">
+                        <div class="descricao-porcao">
+                            <h2>Frango a passarinho empanado</h2>
+                            <p id="texto-porcao">Frango a passarinho empanado na farinha panko.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 34,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda coluna -->
+                <div class="colunas">
+                    <div class="porcao">
+                        <img src="imagens/onion_rings.jpg" alt="Onion rings">
+                        <div class="descricao-porcao">
+                            <h2>Onion Rings</h2>
+                            <p id="texto-porcao">Anéis de cebola empanados na farinha panko.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 34,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="porcao">
+                        <img src="imagens/fried-chicken-liver-with-onions-herbs.jpg" alt="Filé Mignon">
+                        <div class="descricao-porcao">
+                            <h2>Carne</h2>
+                            <p id="texto-porcao">Porção de filé mignon acebolado.</p>
+                            <div class="preco-container">
+                                <span class="preco">R$ 34,90</span>
+                                <button id="add-to-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cardápio Bebidas -->
+    <main class="cardapio-bebidas">
+        <section class="bebidas">
+            <p id="bebidas-menu">Bebidas Menu</p>
+            <h1>Bebidas</h1>
+            <div class="grid-bebidas">
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/coca-cola.webp" alt="Coca-Cola">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Coca-Cola</h2>
+                        <span class="tamanho">350ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 6,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/guarana.png" alt="guarana">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Guaraná</h2>
+                        <span class="tamanho">350ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 6,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/fanta.png" alt="Fanta Laranja">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Fanta Laranja</h2>
+                        <span class="tamanho">350ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 6,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/agua-mineral.png" alt="agua">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Água sem gás</h2>
+                        <span class="tamanho">500ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 3,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/sprite.png" alt="Sprite">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Sprite</h2>
+                        <span class="tamanho">350ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 6,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/suco-laranja.png" alt="Suco de Laranja">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Suco de Laranja</h2>
+                        <span class="tamanho">1 Litro</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 20,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/cerveja.png" alt="cerveja">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Heineken</h2>
+                        <span class="tamanho">330ml</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 8,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bebida-item">
+                    <div class="bebida-imagem">
+                        <img src="imagens/bebidas/suco-morango.png" alt="suco de morango">
+                    </div>
+                    <div class="bebida-conteudo">
+                        <h2>Suco de Morango</h2>
+                        <span class="tamanho">1 Litro</span>
+                        <div class="preco-container">
+                            <span class="preco">R$ 20,00</span>
+                            <button id="add-to-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção de Feedbacks -->
+    <section class="feedbacks">
+        <p id="feedback-titulo">Avaliações</p>
+        <h1>O que nossos clientes dizem</h1>
+        <div class="feedback-container">
+            <div class="feedback-card">
+                <div class="cliente-info">
+                    <img src="imagens/pessoa.avif" alt="Cliente 1">
+                    <div class="cliente-detalhes">
+                        <h3>Mario Silva</h3>
+                        <div class="estrelas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="comentario">"Os melhores hambúrgueres que já comi! O atendimento é excelente e o ambiente muito acolhedor."</p>
+            </div>
+
+            <div class="feedback-card">
+                <div class="cliente-info">
+                    <img src="imagens/pessoa3.jpg" alt="Cliente 2">
+                    <div class="cliente-detalhes">
+                        <h3>João Santos</h3>
+                        <div class="estrelas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="comentario">"Sabor incomparável! As porções são generosas e o preço é justo. Recomendo muito!"</p>
+            </div>
+
+            <div class="feedback-card">
+                <div class="cliente-info">
+                    <img src="imagens/pessoa2.jpg" alt="Cliente 3">
+                    <div class="cliente-detalhes">
+                        <h3>Ana Oliveira</h3>
+                        <div class="estrelas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="comentario">"Ótima variedade de bebidas e lanches. O hambúrguer artesanal é sensacional!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            
+            <div class="conteudos">
+                <div class="sobre-restaurante">
+                    <h2>Sobre o Restaurante</h2>
+                    <p><span id="na-brasa">Na Brasa</span> – O verdadeiro sabor do hambúrguer artesanal, feito com ingredientes selecionados e carnes suculentas.
+                    Ambiente aconchegante para você curtir momentos especiais com amigos e família.
+                    Compromisso com qualidade, sabor e uma experiência única a cada mordida.
+                    Visite-nos e descubra por que nossos hambúrgueres são irresistíveis!</p>
+                </div>
+                
+                <div class="links-rapidos">
+                    <h2>Links Rápidos</h2>
+                    
+                    <a href="#">F.A.Q</a>
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Termos de Serviço</a>
+                    <a href="#">Suporte</a>
+                    <a href="#">Carreiras</a>
+                   
+                
+                </div>
+                
+                
+                
+                <div class="cadastro">
+                    <h2>Se Cadastre</h2>
+                    <form action="">
+                        <input type="email" placeholder="Seu Email">
+                        <button>Se cadastre</button>
+                    </form>
+
+                    <div class="redes-sociais-footer">
+
+                        <ul>
+                            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+
+                            <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        
+
+            <div class="contatos">
+                <div class="footer-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Rua das Flores, 123</span>
+                </div>
+                
+                <div class="footer-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+55 11 98765-4321</span>
+                </div>
+                
+                <div class="footer-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contato@hamburgueria.com</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy 2025 Coding Artist Giovana | Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
