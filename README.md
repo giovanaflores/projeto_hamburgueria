@@ -2,4 +2,4 @@
 
 Este site foi feito __apenas__ com __Html5 e CSS3__ puro, sem frameworks
 
-Links da demonstração do site com o github pages: https://giovanaflores.github.io/projeto_hamburgueria/
+Links da demonstração do site com o github pages: 
