@@ -20,23 +20,39 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: var(--cinza-navbar);
+    overflow:auto;
 }
 
 /* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
-    height: 115px;
+    height: 117px;
     background-color: var(--preto);
     position: fixed;
     width: 100%;
     z-index: 1000;
+    align-items: center;
 }
 
-nav img {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
     width: 95px;
     height: 95px;
     margin: 10px;
+}
+
+.menu-hamburguer {
+    color: var(--amarelo-principal);
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .links {
@@ -45,6 +61,12 @@ nav img {
     position: relative;
     transition: all 0.4s;
     font-family: 'Mulish', sans-serif;
+    flex-direction: row;
+
+}
+
+nav ul.links li {
+    display: inline;
 }
 
 li {
@@ -98,6 +120,8 @@ li {
     color: var(--amarelo-principal);
     transition: transform 0.3s ease;
 }
+
+
 
 .menu-icon:hover {
     transform: scale(1.1);
@@ -160,7 +184,7 @@ li {
 }
 
 .inicio {
-    height: 1200px;
+    height: 1265px;
     width: 100%;
     padding-top: 200px;
     position: relative;
@@ -200,7 +224,7 @@ li {
 }
 
 /* Cardápio hamburguers e porcoes*/
-.cardapio {
+#cardapio {
     background-color: var(--branco);
     padding-top: 200px;
     min-height: 100vh;
@@ -214,7 +238,7 @@ li {
     padding-bottom: 50px;
 }
 
-.cardapio #burguers-menu,
+#cardapio #burguers-menu,
 .cardapio-porcoes #porcoes-menu,
 .cardapio-bebidas #bebidas-menu {
     font-family: 'Pacifico', cursive;
@@ -223,7 +247,7 @@ li {
     font-size: 2.5em;
 }
 
-.cardapio h1,
+#cardapio h1,
 .cardapio-porcoes h1 {
     text-align: center;
     text-transform: uppercase;
@@ -241,7 +265,7 @@ li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.544);
 }
 
-.cardapio .imagens-container,
+#cardapio .imagens-container,
 .cardapio-porcoes .imagens-container {
     display: flex;
     justify-content: center;
@@ -337,8 +361,9 @@ li {
 }
 
 .grid-bebidas {
+    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 2fr);
     gap: 35px;
     max-width: 1200px;
     margin: 50px auto;
@@ -397,7 +422,7 @@ li {
 }
 
 /* Feedbacks */
-.feedbacks {
+#feedbacks {
     background-color: var(--branco);
     padding: 100px 0;
     text-align: center;
@@ -411,7 +436,7 @@ li {
     margin-bottom: 10px;
 }
 
-.feedbacks h1 {
+#feedbacks h1 {
     color: var(--preto);
     font-family: 'Mulish', sans-serif;
     font-size: 3.5em;
@@ -499,7 +524,7 @@ li {
     color: var(--amarelo-secundario);
 }
 
-.contatos {
+#contatos {
     display: flex;
     justify-content: center;
     gap: 250px;
@@ -623,32 +648,4 @@ li {
 .redes-sociais-footer a:hover {
     transform: scale(1.1);
     color: var(--amarelo-secundario);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .grid-bebidas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .feedback-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feedback-card {
-        width: 90%;
-        max-width: 350px;
-    }
-
-    .feedbacks h1 {
-        font-size: 2.5em;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-bebidas {
-        grid-template-columns: 1fr;
-    }
 }

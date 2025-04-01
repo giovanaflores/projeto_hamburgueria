@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="fonts.css">
     <script src="https://kit.fontawesome.com/71001a743d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Na Brasa</title>
 </head>
 <body>
@@ -15,12 +17,17 @@
             <img src="icons/logo.png" alt="Logo da hamburgueria">
         </div>
 
+        <button id="menu-hamburguer" class="menu-hamburguer">
+            <i class="fa fa-bars"></i>
+        </button>
+
         <ul class="links">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Feedbacks</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#feedbacks">Feedbacks</a></li>
+            <li><a href="#contatos">Contato</a></li>
             <li>
-                <a href="#">Cardápio</a>
+                <a href="#cardapio">Cardápio</a>
+                
             </li>
         </ul>
 
@@ -28,7 +35,7 @@
             <li><a href="https://www.google.com/maps" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
             <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><i class="fa-solid fa-cart-shopping carrinho-compras"></i></li>
+            <li><a href="#" rel="noopener noreferrer"><i class="fa-solid fa-cart-shopping carrinho-compras"></i></a></li>
         </ul>
     </nav>
 
@@ -37,7 +44,7 @@
             <div class="inicio">
                 <span id="oferta-especial">Oferta especial</span>
                 <h1>Os melhores burgers<br>do mundo</h1>
-                <p>
+                <p id="texto-inicio">
                     Bem-vindo ao <span id="na-brasa">Na Brasa</span> aqui cada hambúrguer é uma experiência única, feito com ingredientes selecionados e carnes suculentas, grelhadas na perfeição. Nosso ambiente aconchegante e moderno é o lugar ideal para reunir amigos e família, enquanto saboreia combinações irresistíveis.
                 </p>
             </div>
@@ -45,7 +52,7 @@
     </section>
 
     <!-- INÍCIO DO CARDÁPIO DE LANCHES -->
-    <main class="cardapio">
+    <main id="cardapio">
         <section class="burguers">
             <p id="burguers-menu">Burgers Menu</p>
             <h1>Best Ever Burgers</h1>
@@ -381,7 +388,7 @@
     </main>
 
     <!-- Seção de Feedbacks -->
-    <section class="feedbacks">
+    <section id="feedbacks">
         <p id="feedback-titulo">Avaliações</p>
         <h1>O que nossos clientes dizem</h1>
         <div class="feedback-container">
@@ -488,7 +495,7 @@
             </div>
         
 
-            <div class="contatos">
+            <div id="contatos">
                 <div class="footer-item">
                     <i class="fa-solid fa-location-dot"></i>
                     <span>Rua das Flores, 123</span>

@@ -1,8 +1,410 @@
-@media (max-width: 768px) {
+:root {
+    --amarelo-principal: #ffce83;
+    --cinza-navbar: rgb(41, 40, 40);
+    --amarelo-secundario: #fab144;
+    --branco: #fff;
+    --preto: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    background-image: url('imagens/imagem_fundo_do_site_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    
+}
+
+.menu-item {
+    flex: 1 1 45%;
+}
+
+#inicio p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    
+}
+
+@media (max-width: 1280px) { /*NOTEBOOKS*/
+    nav {
+        width: 100%;
+        
+    }
+
+    nav ul.links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #000;
+        position: relative;
+        top: 0px;
+        left: 0;
+        padding: 0;
+        z-index: 9;
+        transition: none;
+        max-height: none;
+        overflow: viseble;
+        justify-content: space-evenly;
+         
+    }
+
+    nav ul.links li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        margin: 20px;
+        
+    }
+
+    nav ul.links li a {
+        color: var(--amarelo-principal);
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        font-size: 1.2em;
+        
+    }
+
+    nav ul.links.show {
+        display: flex;
+        max-height: 500px;
+    }
+    
+    .menu-hamburguer {
+        display: block;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .links a:hover {
+        color: var(--branco);
+    }
+    
+    .links a::after {
+        content: '';
+        height: 2px;
+        width: 60%;
+        background-color: var(--amarelo-principal);
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.3s ease;
+        display: block;
+    }
+    
+    .links a:hover::after,
+    .links a:active::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+    
+    .links a:active {
+        transform: scale(0.97);
+    }
+    
+    .links li:last-child {
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .redes-sociais {
+        display: none;
+    }
+    
+    .menu-item {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #inicio h1 {
+        font-size: 6vw;
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 10px;
+        
+    }
+
+    #inicio p {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .inicio #oferta-especial {
+        font-size: 1.5em;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    #cardapio {
+        padding-top: 150px;
+    }
+
+    .hamburguer img, .porcao img {
+        width: 200px;
+        height: 200px;
+    } 
+
+    #cardapio .imagens-container, .cardapio-porcoes .imagens-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    
+    .cardapio-porcoes {
+        padding-top: 60px;
+    }
+    
+
+    #cardapio h1, .cardapio-porcoes h1 {
+        font-size: 7vw;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 1024px) { /*TABLETS*/
+    nav {
+        width: 100%;
+        
+    }
+
+    nav ul.links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #000;
+        position: relative;
+        top: 0px;
+        left: 0;
+        padding: 0;
+        z-index: 9;
+        transition: none;
+        max-height: none;
+        overflow: viseble;
+       
+    }
+
+    nav ul.links li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.links li a {
+        color: var(--amarelo-principal);
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        margin: 10px;
+        padding: 7px;
+        transition: all 0.2s ease-in-out;
+        
+    }
+
+    nav ul.links a::after, nav ul.links a::before {
+        display: none;
+    }
+
+    .logo img {
+        width: 95px;
+        height: 95px;
+    }
+    .menu-hamburguer {
+        display: none;
+        
+    }
+    
+    #inicio h1 {
+        font-size: 8vw;
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 10px;
+        
+    }
+
+    #inicio p {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .redes-sociais {
+        display: none;
+    }
+
+
+    #inicio #oferta-especial {
+        margin-left: 10px;
+        
+    }
+
+}
+
+@media (max-width : 768px) {
+
+    nav {
+        width: 100%;
+        
+    }
+
+    nav ul.links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 0;
+        z-index: 9;
+        transition: max-height 0.5s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul.links li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.links li a {
+        color: whitesmoke;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        
+    }
+
+    nav ul.links.show {
+        display: flex;
+        max-height: 500px;
+    }
+    
+    .menu-hamburguer {
+        display: block;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+
+    .links a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+    .container {
+        padding: 2px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-item {
+        flex: 1 1 100%;
+    }
+
+    #inicio p {
+        font-size: 1.4em;
+        margin: 5px;
+        padding: 0 5px;
+        width: 100%;
+    }
+
+    #inicio h1 {
+        font-size: 7vw;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #cardapio {
+        padding-top: 150px;
+    }
+
+    .hamburguer img, .porcao img {
+        width: 200px;
+        height: 200px;
+    } 
+
+    #cardapio .imagens-container, .cardapio-porcoes .imagens-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    
+    .cardapio-porcoes {
+        padding-top: 60px;
+    }
+    
+
+    #cardapio h1, .cardapio-porcoes h1 {
+        font-size: 10vw;
+        margin-bottom: 100px;
+    }
+
+    /*CARDAPIO BEBIDAS*/
     .grid-bebidas {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    
     .feedback-container {
         flex-direction: column;
         align-items: center;
@@ -17,10 +419,169 @@
         font-size: 2.5em;
         padding: 0 20px;
     }
+
+    #feedbacks {
+        height: 1150px;
+    }
+
+    #feedbacks h1 {
+        margin-bottom: 70px;
+        font-size: 6vw;
+    }
+   
+
+    .footer {
+        height: 850px;
+    }
+
+    footer .conteudos {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer .footer-section {
+        flex: 1;
+        margin-top: 10px;
+        flex-direction: column;
+        
+    }
+
+    .links-rapidos {
+        display: none;
+    }
+
+    .footer  h2 {
+        font-size: 1.5em;
+        margin: 10px;
+        
+    }
+
+    .footer p,
+    .footer span,
+    .footer a {
+        font-size: 1em;
+    }
+
+    .footer p {
+        width: 350px;
+    }
+
+    .footer i {
+        font-size: 1.4em;
+    }
+
+
+    #contatos {
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+    }
+
+    #contatos i {
+        font-size: 2em;
+    }
+
+    .footer-content {
+        padding: 20px 15px 0 15px;
+    }
+
+    .redes-sociais-footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-top: 20px;
+    
+    }
+
+    .redes-sociais-footer a {
+        padding-left: 50px;
+    }
+
+    .cadastro button {
+        width: 300px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .footer-bottom p {
+        width: 100%;
+    }
+
 }
 
-@media (max-width: 480px) {
+@media (min-width:360px) and (max-width: 500px)  /*DISPOSITIVOES DE 360PX ATÉ 500PX*/ {
+    .menu {
+        display: none;
+    }
+
+    .menu-item {
+        flex: 1 1 100%;
+    }
+
+    #inicio p {
+        font-size: 1.1rem;
+        margin: 5px;
+        padding: 0 5px;
+        width: 350px;
+        
+    }
+
+    #inicio h1 {
+        font-size: 10vw;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #inicio #oferta-especial {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
     .grid-bebidas {
         grid-template-columns: 1fr;
     }
+
+    #cardapio {
+        padding-top: 150px;
+        
+    }
+
+    .hamburguer img, .porcao img {
+        display: none;
+    } 
+
+    #cardapio .imagens-container, .cardapio-porcoes .imagens-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .cardapio-porcoes {
+        padding-top: 60px;
+    }
+    
+
+    #cardapio h1, .cardapio-porcoes h1 {
+        font-size: 10vw;
+        margin-bottom: 10px;
+    }
+
+    .descricao-burguer #texto-burguer,
+    .descricao-porcao #texto-porcao {
+    width: 350px;
+    font-size: 1.2em;
+    
 }
+    
+    #cardapio h2, .cardapio-porcoes h2 {
+        font-size: 7vw;
+
+    }
+}    
