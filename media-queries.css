@@ -560,7 +560,6 @@ nav {
     .hamburguer, .porcao {
         display: flex;
         flex-direction: column;
-        background-color: rgba(225, 225, 225, 0.707);
         padding: 40px;
         border-radius: 20px;
         
