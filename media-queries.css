@@ -514,7 +514,7 @@ nav {
 
 }
 
-@media (min-width:360px) and (max-width: 500px)  /*DISPOSITIVOES DE 360PX ATÉ 500PX*/ {
+@media (min-width:320px) and (max-width: 500px)  /*DISPOSITIVOES DE 360PX ATÉ 500PX*/ {
     .menu {
         display: none;
     }
