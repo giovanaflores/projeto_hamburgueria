@@ -552,8 +552,19 @@ nav {
     }
 
     .hamburguer img, .porcao img {
-        display: none;
+        border-radius: 10px;
+        width: 250px;
+        height: 250px;
     } 
+
+    .hamburguer, .porcao {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(225, 225, 225, 0.707);
+        padding: 40px;
+        border-radius: 20px;
+        
+    }
 
     #cardapio .imagens-container, .cardapio-porcoes .imagens-container {
         display: grid;
@@ -561,15 +572,16 @@ nav {
         gap: 20px;
         max-width: 90%;
         margin: 0 auto;
+        
     }
-    
+
     .cardapio-porcoes {
         padding-top: 60px;
     }
     
 
     #cardapio h1, .cardapio-porcoes h1 {
-        font-size: 10vw;
+        font-size: 12vw;
         margin-bottom: 10px;
     }
 
@@ -578,10 +590,20 @@ nav {
     width: 350px;
     font-size: 1.2em;
     
-}
+    }
+
+    .descricao-burguer, .descricao-porcao {
+        padding-top: 0;
+        gap: 5px;
+    }
     
     #cardapio h2, .cardapio-porcoes h2 {
         font-size: 7vw;
+
+    }
+
+    #cardapio p, .cardapio-porcoes p {
+        display: none;
 
     }
 }    
