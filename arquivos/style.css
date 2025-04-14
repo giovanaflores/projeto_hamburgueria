@@ -1,4 +1,4 @@
-@import url('media quieres.css');
+@import url('media-queries.css');
 
 /* Reset e Variáveis Globais */
 :root {
@@ -167,7 +167,7 @@ li {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(imagens/imagem_fundo_do_site_2.jpg);
+    background-image: url(arquivos/imagens/imagem_fundo_do_site_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -212,15 +212,20 @@ li {
 .inicio p {
     font-size: 1.4em;
     text-align: justify;
-    width: 900px;
+    width: 1000px;
     margin: 10px;
     font-family: 'Mulish', sans-serif;
 }
+
 
 .inicio span#na-brasa {
     color: var(--amarelo-secundario);
     font-family: 'Arizonia', cursive;
     font-size: 1.5em;
+}
+
+button#carrinho {
+    display: none;
 }
 
 /* Cardápio hamburguers e porcoes*/
@@ -649,3 +654,80 @@ li {
     transform: scale(1.1);
     color: var(--amarelo-secundario);
 }
+
+/*COMEÇO DO CARRINHO*/
+
+.carrinho-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'Mulish', sans-serif;
+}
+
+.carrinho-popup.active {
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #101113b3;
+}
+
+.carrinho-modal {
+    position: relative;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 500px;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Mulish', sans-serif;
+    
+}
+
+.carrinho-modal h2 {
+    margin-bottom: 1rem;
+    color: #fab144;
+    
+}
+
+.fechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--amarelo-secundario);
+    cursor: pointer;
+}
+
+.resumo {
+    margin-top: 1.5rem;
+}
+
+.finalizar-pedido {
+    background-color: var(--amarelo-secundario);
+    color: #1f1f1f;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/*FIM DO CARRINHO*/

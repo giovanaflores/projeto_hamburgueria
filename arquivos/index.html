@@ -25,17 +25,12 @@
             <li><a href="#inicio">Início</a></li>
             <li><a href="#feedbacks">Feedbacks</a></li>
             <li><a href="#contatos">Contato</a></li>
-            <li>
-                <a href="#cardapio">Cardápio</a>
-                
-            </li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li> <a href="#" id="carrinho-mobile">Carrinho</a></li>
         </ul>
 
         <ul class="redes-sociais">
-            <li><a href="https://www.google.com/maps" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a href="#" rel="noopener noreferrer"><i class="fa-solid fa-cart-shopping carrinho-compras"></i></a></li>
+            <li><a href="#" id="icone-carrinho" rel="noopener noreferrer"><i class="fa-solid fa-cart-shopping carrinho-compras"></i></a></li>
         </ul>
     </nav>
 
@@ -47,6 +42,8 @@
                 <p id="texto-inicio">
                     Bem-vindo ao <span id="na-brasa">Na Brasa</span> aqui cada hambúrguer é uma experiência única, feito com ingredientes selecionados e carnes suculentas, grelhadas na perfeição. Nosso ambiente aconchegante e moderno é o lugar ideal para reunir amigos e família, enquanto saboreia combinações irresistíveis.
                 </p>
+
+                <button id="carrinho">Ir para o carrinho</button>
             </div>
         </div>
     </section>
@@ -517,5 +514,24 @@
             <p>Copyright &copy 2025 Coding Artist Giovana | Todos os direitos reservados</p>
         </div>
     </footer>
+    
+    <!-- COMEÇO DO CARRINHO DE COMPRAS -->
+    <div id="carrinho-popup" class="carrinho-popup">
+        <div class="overlay"></div>
+        <div class="carrinho-modal">
+            <button id="fechar-carrinho" class="fechar"><i class="fa-solid fa-xmark"></i></button>
+            <h2>Meu Carrinho</h2>
+            <div class="itens-carrinho">
+                <!-- Itens do carrinho serão adicionados aqui via js -->
+            </div>
+            <div class="resumo">
+                <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+                <button class="finalizar-pedido">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FIM DO CARRINHO DE COMPRAS -->
 </body>
 </html>

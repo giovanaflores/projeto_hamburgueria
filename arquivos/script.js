@@ -2,7 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const paragrafoInicio = document.getElementById('texto-inicio');
     const linkItems = document.querySelectorAll('nav ul.links li a');
     const navLinks = document.querySelector('nav ul.links');
+    const carrinhoMobile = document.querySelector('#carrinho-mobile');
     const menuHamburguer = document.getElementById('menu-hamburguer');
+    const iconeCarrinho = document.querySelector('#icone-carrinho');
+    const popupCarrinho = document.querySelector('#carrinho-popup');
+    const fecharCarrinho = document.querySelector('#fechar-carrinho');
 
     function atualizarTextoParagrafo() {
         if (window.innerWidth <= 768) {
@@ -32,4 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
     menuHamburguer.addEventListener('click', function() {
         navLinks.classList.toggle('show');
     });
+
+    iconeCarrinho.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupCarrinho.classList.add('active');
+    });
+
+    fecharCarrinho.addEventListener('click', () => {
+        popupCarrinho.classList.remove('active');
+    });
+
+    carrinhoMobile.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupCarrinho.classList.add('active');
+        navLinks.classList.remove('show');
+    })
 });
